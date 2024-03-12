@@ -144,6 +144,16 @@
     var auth = firebase.auth();
 
   </script>
+  <script type="text/javascript">
+  window.elasticAnalytics.createTracker({
+    endpoint: "https://be0b12a9c93348c8a08f7eb72fd9c5b1.us-central1.gcp.cloud.es.io:443",
+    collectionName: "behavioral",
+    apiKey: "TFNWVU5JNEJtU3VtYVF4VGZLRHE6MkNnenZHZThReTJMRWJ3b2lxWXRrdw==",
+    // Optional: sampling rate percentage: 0-1, 0 = no events, 1 = all events
+    // sampling: 1,
+  });
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/@elastic/behavioral-analytics-browser-tracker@2"></script>
   {{ end }}
   {{ end }}
 </head>
